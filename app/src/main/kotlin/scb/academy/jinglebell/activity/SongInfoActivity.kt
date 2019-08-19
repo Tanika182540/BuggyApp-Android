@@ -3,6 +3,7 @@ package scb.academy.jinglebell.activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -44,8 +45,10 @@ class SongInfoActivity : AppCompatActivity() {
         tvSongTrackPrice = findViewById(R.id.tv_track_price)
         tvSongCollectionPrice = findViewById(R.id.tv_collection_price)
 
-        val song = intent.getParcelableExtra<Song>(EXTRA_SONG) ?: return
+        val song = intent.getParcelableExtra<Song>("song")
         showSongInformation(song)
+
+
     }
 
     private fun showSongInformation(song: Song) {

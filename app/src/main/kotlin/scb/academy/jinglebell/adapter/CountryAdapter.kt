@@ -46,7 +46,12 @@ class CountryItemViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
 
     fun bind(country: Country) {
         tvName.text = country.name
-        tvCapital.text = "Capital: ${country.capital}"
+
+        if(country.capital == "" || country.capital == null){
+            tvCapital.text = "Capital: -"
+        }else{
+            tvCapital.text = "Capital: ${country.capital}"
+        }
         ivFlag.setImageUrl(country.imageUrl)
     }
 

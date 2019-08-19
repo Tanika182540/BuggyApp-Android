@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+
+        >
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter your name (nickname)"
+            android:gravity="center"
+            />
+
+    <TextView
+            android:id="@+id/textViewName"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="John Sick(John)"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="25dp"
+            android:singleLine="true"
+            />
+</LinearLayout>
