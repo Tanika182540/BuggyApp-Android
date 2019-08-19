@@ -42,7 +42,7 @@ class ProfileFragment : Fragment(){
 
         _view.textView.setOnKeyListener(View.OnKeyListener { v, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_ENTER && event.action == KeyEvent.ACTION_UP) {
-                val name = _view.textView.text
+                val name = _view.textView.text.toString()
                 val intent = Intent (activity, ProfileActivity::class.java)
 
                 intent.putExtra("nameText",name)
